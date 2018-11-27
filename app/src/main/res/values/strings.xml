@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Tema 4</string>
+    <string name="btnNumerosPrimos">Números Primos</string>
+    <string name="btnJuegoAciertos">Juego de Aciertos</string>
+    <string name="btnDesplazandoImg">Desplazando Imágenes</string>
+    <string name="btnSeleccionandoImg">Seleccionando Imágenes</string>
+
 </resources>
