@@ -4,6 +4,8 @@
     <string name="btnJuegoAciertos">Aciertos</string>
     <string name="btnDesplazandoImg">Desplazando</string>
     <string name="btnSeleccionandoImg">Seleccionando</string>
-    <string name="title_activity_numeros_primos">Números Primos</string>
+     <string name="title_activity_numeros_primos">Números Primos</string>
+    <string name="lblIntroduceN">Introduce un número:</string>
+    <string name="btnCalcular">Calcular</string>
 
 </resources>
