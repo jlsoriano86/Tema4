@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LayoutDesplazandoImagenes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".DesplazandoImagenesActivity">
+
+    <ScrollView
+        android:id="@+id/LayoutScrollImagenes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <fragment
+            android:id="@+id/fragmentPerro"
+            android:name=".DesplazandoImagenesActivity.fragmentPerro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imagenPerro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Un perro"
+        app:srcCompat="@drawable/fotoperro" />
+
+        <fragment
+            android:id="@+id/fragmentGato"
+            android:name=".DesplazandoImagenesActivity.fragmentGato"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imagenGato"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Un gato"
+        app:srcCompat="@drawable/fotogato" />
+
+
+    </ScrollView>
+
+
+</LinearLayout>

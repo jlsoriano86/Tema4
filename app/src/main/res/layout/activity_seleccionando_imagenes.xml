@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SeleccionandoImagenesActivity">
+
+    <fragment
+        android:id="@+id/idRosa"
+        android:name="fragmentRosa"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <fragment
+        android:id="@+id/idMargarita"
+        android:name="fragmentMargarita"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <fragment
+        android:id="@+id/idTulipan"
+        android:name="fragmentTulipan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <fragment
+        android:id="@+id/idVioleta"
+        android:name="fragmentVioleta"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"></LinearLayout>
+
+    <Button
+        android:id="@+id/btnRosa"
+        style="@style/EstiloBotonesFlores"
+        android:text="@string/btnRosa" />
+
+    <Button
+        android:id="@+id/btnMargarita"
+        style="@style/EstiloBotonesFlores"
+        android:text="@string/btnMargarita" />
+
+    <Button
+        android:id="@+id/btnTulipan"
+        style="@style/EstiloBotonesFlores"
+        android:text="@string/btnTulipan" />
+
+    <Button
+        android:id="@+id/btnVioleta"
+        style="@style/EstiloBotonesFlores"
+        android:text="@string/btnVioleta" />
+
+
+</LinearLayout>

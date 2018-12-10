@@ -16,10 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NumerosPrimosActivity"
-                   android:label="@string/title_activity_numeros_primos">
-        </activity>
-
+        <activity
+            android:name=".NumerosPrimosActivity"
+            android:label="@string/title_activity_numeros_primos" />
+        <activity
+            android:name=".DesplazandoImagenesActivity"
+            android:label="@string/title_activity_desplazando_imagenes" />
+        <activity android:name=".SeleccionandoImagenesActivity"
+            android:label="@string/title_activity_seleccionando_imagenes" />
     </application>
 
 </manifest>
