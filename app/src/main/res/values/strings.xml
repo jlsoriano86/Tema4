@@ -4,5 +4,6 @@
     <string name="btnJuegoAciertos">Aciertos</string>
     <string name="btnDesplazandoImg">Desplazando</string>
     <string name="btnSeleccionandoImg">Seleccionando</string>
+    <string name="title_activity_numeros_primos">Números Primos</string>
 
 </resources>

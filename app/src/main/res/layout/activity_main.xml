@@ -61,7 +61,7 @@
                 android:id="@+id/btnDesplazandoImg"
                 style="@style/EstiloBotones"
                 android:drawableLeft="@android:drawable/ic_menu_report_image"
-                tools:text="@string/btnDesplazandoImg" />
+                android:text="@string/btnDesplazandoImg" />
 
             <Button
                 android:id="@+id/btnSeleccionandoImg"
