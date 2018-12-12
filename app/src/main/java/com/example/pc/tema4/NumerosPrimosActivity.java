@@ -19,9 +19,9 @@ public class NumerosPrimosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numeros_primos);
 
-   txtNumero = (EditText) findViewById(R.id.txtNumero);
-   btnCalcular = (Button) findViewById(R.id.btnCalcular);
-   txtResultado = (TextView) findViewById(R.id.txtResultado);
+   txtNumero = findViewById(R.id.txtNumero);
+   btnCalcular =  findViewById(R.id.btnCalcular);
+   txtResultado = findViewById(R.id.txtResultado);
 
    btnCalcular.setOnClickListener(new View.OnClickListener() {
        @Override

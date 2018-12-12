@@ -23,11 +23,11 @@
             android:name=".JuegoDeAciertosActivity"
             android:label="@string/title_activity_juego_de_aciertos" />
         <activity
-            android:name=".DesplazandoImagenesActivity"
-            android:label="@string/title_activity_desplazando_imagenes" />
-        <activity
             android:name=".SeleccionandoImagenesActivity"
             android:label="@string/title_activity_seleccionando_imagenes" />
+        <activity
+            android:name=".DesplazandoImagenesActivity"
+            android:label="@string/title_activity_desplazando_imagenes" />
     </application>
 
 </manifest>
