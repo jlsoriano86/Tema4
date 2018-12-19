@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".NumerosPrimosActivity">
 
     <LinearLayout
@@ -14,7 +15,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <EditText
+        <TextView
             android:id="@+id/lblNumero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,7 +24,7 @@
             android:inputType="textPersonName"
             android:text="@string/lblIntroduceN" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtNumero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,7 +40,8 @@
         <Button
             android:id="@+id/btnCalcular"
             style="@style/EstiloBotonesActivities"
-            android:text="@string/btnCalcular" />
+            android:text="@string/btnCalcular"
+            android:onClick="calcularPrimo"/>
     </LinearLayout>
 
     <LinearLayout

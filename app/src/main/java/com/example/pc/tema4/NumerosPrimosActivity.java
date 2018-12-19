@@ -1,47 +1,49 @@
 package com.example.pc.tema4;
 
-import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 public class NumerosPrimosActivity extends AppCompatActivity {
-    EditText txtNumero;
-    Button btnCalcular;
-    TextView txtResultado;
 
-    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numeros_primos);
+    }
 
-   txtNumero = findViewById(R.id.txtNumero);
-   btnCalcular =  findViewById(R.id.btnCalcular);
-   txtResultado = findViewById(R.id.txtResultado);
+    public void calcularPrimo(View view) {
+        String strSiEsPrimo = "Es un número primo";
+        String strNoEsPrimo = "No es un número primo";
 
-   btnCalcular.setOnClickListener(new View.OnClickListener() {
-       @Override
-       public void onClick(View v) {
-           int numero = Integer.parseInt(txtNumero.getText().toString());
-           int acu=0, i;
-           for  (i=1; i<numero; i++){
-               if (numero % i == 0) {
-                   acu++;
-               }
-               }
+        TextView txtNumero = findViewById(R.id.txtNumero);
+        Long numero = Long.parseLong(txtNumero.getText().toString());
 
-         if (acu == 2){
-               txtResultado.setText("Es un número primo");
+
+
+        boolean esPrimo = true;
+        Long i = 0L;
+        // Long tope = numero;
+        // Long tope = numero/2;
+         Long tope = (long) Math.sqrt(numero);
+
+        Long inicio = System.currentTimeMillis();
+        for  (i=2L; i<tope; i++){
+            if (numero % i == 0) {
+                esPrimo = false; break;
             }
-        else{
-               txtResultado.setText("No es un número primo");
-         }
-         }
-         });
+        }
+        Long acaba = System.currentTimeMillis();
 
-      }
+        Log.i("NUMPRIM", "El primer divisor es:  " + i);
+        Log.i("NUMPRIM", "inicio: " + inicio);
+        Log.i("NUMPRIM", "acaba: " + acaba);
+        Log.i("NUMPRIM", "tiempo empleado: " + (acaba-inicio));
+
+        ((TextView)findViewById(R.id.txtResultado)).setText ( esPrimo ? strSiEsPrimo : strNoEsPrimo);
+
+    }
+
 }
