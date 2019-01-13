@@ -10,79 +10,79 @@
     tools:context=".SeleccionandoImagenesActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:id="@+id/FRosa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
 
         <fragment
-            android:id="@+id/idRosa"
-            android:name="fragmentRosa"
+            android:id="@+id/fragmentRosa"
+            android:name="com.example.pc.tema4.FragmentRosa"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <fragment
-            android:id="@+id/idMargarita"
-            android:name="fragmentMargarita"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <fragment
-            android:id="@+id/idTulipan"
-            android:name="fragmentTulipan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <fragment
-            android:id="@+id/idVioleta"
-            android:name="fragmentVioleta"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TableLayout
-            android:id="@+id/LayoutBotonesFlores"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="320dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="10dp"
-            android:paddingLeft="70dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="10dp">
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <Button
-                    android:id="@+id/btnRosa"
-                    style="@style/EstiloBotonesFlores"
-                    android:text="@string/btnRosa" />
-
-                <Button
-                    android:id="@+id/btnMargarita"
-                    style="@style/EstiloBotonesFlores"
-                    android:text="@string/btnMargarita" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <Button
-                    android:id="@+id/btnTulipan"
-                    style="@style/EstiloBotonesFlores"
-                    android:text="@string/btnTulipan" />
-
-                <Button
-                    android:id="@+id/btnVioleta"
-                    style="@style/EstiloBotonesFlores"
-                    android:text="@string/btnVioleta" />
-            </TableRow>
-
-        </TableLayout>
+            android:layout_height="match_parent" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FMargarita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="com.example.pc.tema4.FragmentMargarita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/LayoutBotonesFlores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnRosa"
+                style="@style/EstiloBotonesFlores"
+                android:onClick="pressRosa"
+                android:text="@string/btnRosa" />
+
+            <Button
+                android:id="@+id/btnMargarita"
+                style="@style/EstiloBotonesFlores"
+                android:onClick="pressMargarita"
+                android:text="@string/btnMargarita" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnTulipan"
+                style="@style/EstiloBotonesFlores"
+                android:text="@string/btnTulipan" />
+
+            <Button
+                android:id="@+id/btnVioleta"
+                style="@style/EstiloBotonesFlores"
+                android:text="@string/btnVioleta" />
+        </TableRow>
+
+    </TableLayout>
 
 
 </LinearLayout>

@@ -8,7 +8,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     Button primos;
-    Button imagenes;
+    Button desplazando;
+    Button seleccionando;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,24 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(primos);
                 }
             });
+
+        desplazando =(Button)findViewById(R.id.btnDesplazandoImg);
+        desplazando.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent desplazando = new Intent(MainActivity.this, DesplazandoImagenesActivity.class);
+                startActivity(desplazando);
+            }
+        });
+
+        seleccionando =(Button)findViewById(R.id.btnSeleccionandoImg);
+        seleccionando.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent seleccionando = new Intent(MainActivity.this, SeleccionandoImagenesActivity.class);
+                startActivity(seleccionando);
+            }
+        });
 
 
 
