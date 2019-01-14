@@ -3,52 +3,72 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".JuegoDeAciertosActivity">
 
-    <fragment
-        android:id="@+id/fragmentoPaises"
-        android:name="fragmentoPaises"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="150dp"
+        android:orientation="horizontal">
 
-    <fragment
-        android:id="@+id/fragmentoCapitales"
-        android:name="fragmentoCapitales"
+        <fragment
+            android:id="@+id/fragmentPaises"
+            android:name="com.example.pc.tema4.PaisesFragment"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+
+        <fragment
+            android:id="@+id/fragmentCiudades"
+            android:name="com.example.pc.tema4.CiudadesFragment"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <ScrollView
-        android:id="@+id/ScrollPaises"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/lblPais"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+            android:hint="@string/hintPais"
+            android:onClick="comprobar" />
 
-    <ListView
-        android:id="@+id/ListaPaises"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <ScrollView
-        android:id="@+id/ScrollCapitales"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/lblCiudad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+            android:hint="@string/hintCiudad"
+            android:onClick="comprobar" />
 
-    <ListView
-        android:id="@+id/ListaCapitales"
+        <Button
+            android:id="@+id/btnVerificar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnVerificar" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgOK"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            app:srcCompat="@android:drawable/checkbox_on_background" />
+
+        <ImageView
+            android:id="@+id/imgError"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            app:srcCompat="@android:drawable/ic_delete" />
+    </LinearLayout>
 
 </LinearLayout>

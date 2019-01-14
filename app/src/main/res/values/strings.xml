@@ -15,8 +15,34 @@
     <string name="btnTulipan">Tulipan</string>
     <string name="btnVioleta">Violeta</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pais1">España</string>
+    <string name="pais2">Francia</string>
+    <string name="pais3">Japón</string>
+    <string name="pais4">Italia</string>
+    <string name="pais5">Portugal</string>
+    <string name="pais6">Grecia</string>
+    <string name="pais7">Alemania</string>
+    <string name="pais8">Holanda</string>
+    <string name="pais9">Irlanda</string>
+    <string name="pais10">Rusia</string>
+
+    <string name="ciudad1">Tokio</string>
+    <string name="ciudad2">Berlín</string>
+    <string name="ciudad3">Roma</string>
+    <string name="ciudad4">París</string>
+    <string name="ciudad5">Ámsterdam</string>
+    <string name="ciudad6">Madrid</string>
+    <string name="ciudad7">Moscú</string>
+    <string name="ciudad8">Dublín</string>
+    <string name="ciudad9">Atenas</string>
+    <string name="ciudad10">Lisboa</string>
+
+    <string name="hintPais">País seleccionado</string>
+    <string name="hintCiudad">Ciudad seleccionada</string>
+    <string name="btnVerificar">Verificar</string>
+
+
+
 
 
 </resources>

@@ -11,7 +11,7 @@
 
     <ImageView
         android:id="@+id/imgRosa"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
         android:src="@drawable/rosa" />
 </FrameLayout>

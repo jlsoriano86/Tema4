@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
     Button primos;
     Button desplazando;
     Button seleccionando;
+    Button aciertos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent seleccionando = new Intent(MainActivity.this, SeleccionandoImagenesActivity.class);
                 startActivity(seleccionando);
+            }
+        });
+
+        aciertos =(Button)findViewById(R.id.btnJuegoAciertos);
+        aciertos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent aciertos = new Intent(MainActivity.this, JuegoDeAciertosActivity.class);
+                startActivity(aciertos);
             }
         });
 

@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/LayoutFragmentFlores"
     android:layout_width="match_parent"
-    android:layout_height="510dp"
 
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SeleccionandoImagenesActivity">
 
     <LinearLayout
         android:id="@+id/FRosa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="530dp"
+        android:layout_height="530dp"
         android:orientation="vertical"
         android:visibility="visible">
 
@@ -20,20 +20,48 @@
             android:id="@+id/fragmentRosa"
             android:name="com.example.pc.tema4.FragmentRosa"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/FMargarita"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="530dp"
+        android:layout_height="530dp"
         android:orientation="vertical"
         android:visibility="gone">
 
         <fragment
-            android:id="@+id/fragment2"
+            android:id="@+id/fragmentMargarita"
             android:name="com.example.pc.tema4.FragmentMargarita"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FTulipan"
+        android:layout_width="530dp"
+        android:layout_height="530dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/fragmentTulipan"
+            android:name="com.example.pc.tema4.FragmentTulipan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FVioleta"
+        android:layout_width="530dp"
+        android:layout_height="530dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/fragmentVioleta"
+            android:name="com.example.pc.tema4.FragmentVioleta"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
 
@@ -42,12 +70,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="320dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
         android:paddingLeft="70dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp">
+        android:paddingRight="10dp">
 
         <TableRow
             android:layout_width="match_parent"
@@ -74,11 +99,13 @@
             <Button
                 android:id="@+id/btnTulipan"
                 style="@style/EstiloBotonesFlores"
+                android:onClick="pressTulipan"
                 android:text="@string/btnTulipan" />
 
             <Button
                 android:id="@+id/btnVioleta"
                 style="@style/EstiloBotonesFlores"
+                android:onClick="pressVioleta"
                 android:text="@string/btnVioleta" />
         </TableRow>
 
