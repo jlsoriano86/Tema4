@@ -41,8 +41,8 @@
         <Button
             android:id="@+id/btnCalcular"
             style="@style/EstiloBotonesActivities"
-            android:text="@string/btnCalcular"
-            android:onClick="calcularPrimo"/>
+            android:onClick="calcularPrimo"
+            android:text="@string/btnCalcular" />
     </LinearLayout>
 
     <LinearLayout

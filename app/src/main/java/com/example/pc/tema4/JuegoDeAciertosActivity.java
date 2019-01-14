@@ -29,6 +29,6 @@ public class JuegoDeAciertosActivity extends AppCompatActivity implements Paises
     }
 
     public void verificar(){
-        
+
     }
 }
