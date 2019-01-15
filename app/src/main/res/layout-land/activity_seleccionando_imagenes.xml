@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LayoutFragmentFlores"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".SeleccionandoImagenesActivity">
+
+    <LinearLayout
+        android:id="@+id/FRosa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <fragment
+            android:id="@+id/fragmentRosa"
+            android:name="com.example.pc.tema4.FragmentRosa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FMargarita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/fragmentMargarita"
+            android:name="com.example.pc.tema4.FragmentMargarita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FTulipan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/fragmentTulipan"
+            android:name="com.example.pc.tema4.FragmentTulipan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FVioleta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/fragmentVioleta"
+            android:name="com.example.pc.tema4.FragmentVioleta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/LayoutBotonesFlores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnRosa"
+                style="@style/EstiloBotonesFlores"
+                android:onClick="pressRosa"
+                android:text="@string/btnRosa" />
+
+            <Button
+                android:id="@+id/btnMargarita"
+                style="@style/EstiloBotonesFlores"
+                android:onClick="pressMargarita"
+                android:text="@string/btnMargarita" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnTulipan"
+                style="@style/EstiloBotonesFlores"
+                android:onClick="pressTulipan"
+                android:text="@string/btnTulipan" />
+
+            <Button
+                android:id="@+id/btnVioleta"
+                style="@style/EstiloBotonesFlores"
+                android:onClick="pressVioleta"
+                android:text="@string/btnVioleta" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
