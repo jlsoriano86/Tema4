@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Theme 4</string>
+    <string name="btnNumerosPrimos">Prime</string>
+    <string name="btnJuegoAciertos">Hits</string>
+    <string name="btnDesplazandoImg">Displacing</string>
+    <string name="btnSeleccionandoImg">Selecting</string>
+    <string name="title_activity_numeros_primos">Prime Numbers</string>
+    <string name="lblIntroduceN">Enter a number:</string>
+    <string name="btnCalcular">Calculate</string>
+    <string name="title_activity_juego_de_aciertos">Hitting Game</string>
+    <string name="title_activity_desplazando_imagenes">Moving Pictures</string>
+    <string name="title_activity_seleccionando_imagenes">Selecting Images</string>
+    <string name="btnRosa">Rose</string>
+    <string name="btnMargarita">"Daisy "</string>
+    <string name="btnTulipan">Tulip</string>
+    <string name="btnVioleta">Violet</string>
+    <string name="pais1">Spain</string>
+    <string name="pais2">France</string>
+    <string name="pais3">Japan</string>
+    <string name="pais4">Italy</string>
+    <string name="pais5">Portugal</string>
+    <string name="pais6">Greece</string>
+    <string name="pais7">Germany</string>
+    <string name="pais8">Holland</string>
+    <string name="pais9">Ireland</string>
+    <string name="pais10">Russia</string>
+    <string name="ciudad1">Tokyo</string>
+    <string name="ciudad2">Berlin</string>
+    <string name="ciudad3">Rome</string>
+    <string name="ciudad4">Paris</string>
+    <string name="ciudad5">Amsterdam</string>
+    <string name="ciudad6">Madrid</string>
+    <string name="ciudad7">Moscow</string>
+    <string name="ciudad8">Dublin</string>
+    <string name="ciudad9">Athens</string>
+    <string name="ciudad10">Lisbon</string>
+    <string name="hintPais">Selected country</string>
+    <string name="hintCiudad">Selected city</string>
+    <string name="btnVerificar">Check</string>
+</resources>
