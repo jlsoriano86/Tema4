@@ -38,4 +38,6 @@
     <string name="hintPais">Selected country</string>
     <string name="hintCiudad">Selected city</string>
     <string name="btnVerificar">Check</string>
+    <string name="strSiEsPrimo">It\'s a prime number</string>
+    <string name="strNoEsPrimo">It is not a prime number</string>
 </resources>

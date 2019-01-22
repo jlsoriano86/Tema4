@@ -38,4 +38,6 @@
     <string name="hintPais">Pays sélectionné</string>
     <string name="hintCiudad">Ville choisie</string>
     <string name="btnVerificar">Vérifier</string>
+    <string name="strSiEsPrimo">C\'est un nombre premier</string>
+    <string name="strNoEsPrimo">Ce n\'est pas un nombre premier</string>
 </resources>

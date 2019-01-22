@@ -27,7 +27,7 @@ public class NumerosPrimosActivity extends AppCompatActivity {
         Long i = 0L;
         // Long tope = numero;
         // Long tope = numero/2;
-         Long tope = (long) Math.sqrt(numero);
+        Long tope = (long) Math.sqrt(numero);
 
         Long inicio = System.currentTimeMillis();
         for  (i=2L; i<tope; i++){
