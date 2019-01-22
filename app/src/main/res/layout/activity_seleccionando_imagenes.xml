@@ -11,8 +11,8 @@
 
     <LinearLayout
         android:id="@+id/FRosa"
-        android:layout_width="530dp"
-        android:layout_height="530dp"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
         android:orientation="vertical"
         android:visibility="visible">
 
@@ -25,8 +25,8 @@
 
     <LinearLayout
         android:id="@+id/FMargarita"
-        android:layout_width="530dp"
-        android:layout_height="530dp"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
         android:orientation="vertical"
         android:visibility="gone">
 
@@ -39,8 +39,8 @@
 
     <LinearLayout
         android:id="@+id/FTulipan"
-        android:layout_width="530dp"
-        android:layout_height="530dp"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
         android:orientation="vertical"
         android:visibility="gone">
 
@@ -53,8 +53,8 @@
 
     <LinearLayout
         android:id="@+id/FVioleta"
-        android:layout_width="530dp"
-        android:layout_height="530dp"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
         android:orientation="vertical"
         android:visibility="gone">
 
