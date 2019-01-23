@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-           primos =(Button)findViewById(R.id.btnNumerosPrimos);
+           primos = findViewById(R.id.btnNumerosPrimos);
            primos.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-        desplazando =(Button)findViewById(R.id.btnDesplazandoImg);
+        desplazando = findViewById(R.id.btnDesplazandoImg);
         desplazando.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        seleccionando =(Button)findViewById(R.id.btnSeleccionandoImg);
+        seleccionando = findViewById(R.id.btnSeleccionandoImg);
         seleccionando.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        aciertos =(Button)findViewById(R.id.btnJuegoAciertos);
+        aciertos = findViewById(R.id.btnJuegoAciertos);
         aciertos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
