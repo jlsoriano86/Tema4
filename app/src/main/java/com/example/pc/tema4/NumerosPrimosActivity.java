@@ -25,7 +25,7 @@ public class NumerosPrimosActivity extends AppCompatActivity {
 
             String strSiEsPrimo = getResources().getString(R.string.strSiEsPrimo);
             String strNoEsPrimo = getResources().getString(R.string.strNoEsPrimo);
-            
+
 
         TextView txtNumero = findViewById(R.id.txtNumero);
         Long numero = Long.parseLong(txtNumero.getText().toString());
